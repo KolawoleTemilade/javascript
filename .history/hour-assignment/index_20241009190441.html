@@ -37,10 +37,7 @@
 
 
     </script>
-    <!-- heres the script for coin tossing -->
     <script>
-        // this if statement could either be written like this
-        const number = Math.random();
         if ( number < 0.5){
             console.log('head')
 
@@ -48,49 +45,13 @@
             console.log('tail')
         }
 
-        // or this tenary way
         const result = number < 0.5 ? 'head' : 'tail';
         console.log(result);
-        //  can be written like this
+   
         const guess = 'head';
-        const finalOutcome = guess === 'head'? 'you win' : 'you lose'
-
-        //   or like this
-        if (guess === 'head'){
-            console.log('you win')
-        }else {
-            console.log('you lose')
-        }
+        result = Math.random
 
 
     </script>
-    <!-- heres scriptt for updating quantity -->
-     <div>
-        <button onclick="increment()">+</button>
-        <button onclick="reset()">0</button>
-        <button onclick="subtract()">-</button>
-     </div>
-    <script>
-        let maxQ = 0;
-         function increment (){
-            if (maxQ < 10){
-                maxQ++
-                console.log(maxQ)
-
-            }else{
-                console.log('cart is full')
-            }
-         }
-         function reset (){
-            maxQ = 0
-            console.log(maxQ)
-         }
-         function subtract (){
-            if (maxQ >= 0){
-                maxQ--
-                console.log(`not enough quantity in the cart ${maxQ}`)
-            }
-         }
-    </script>     
-</body>
+  </body>
 </html>
